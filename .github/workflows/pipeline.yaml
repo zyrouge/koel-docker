@@ -4,7 +4,7 @@ on:
     branches-ignore:
      - 'dependabot/**'
   pull_request:
-  update_dispatch:
+  workflow_dispatch:
 
 permissions: read-all
 
