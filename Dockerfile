@@ -8,7 +8,7 @@ ARG KOEL_VERSION_REF=v6.12.1
 RUN apt-get update && apt-get install -y vim
 
 # Download the koel release matching the version and remove anything not necessary for production
-RUN curl -L https://github.com/koel/koel/releases/download/${KOEL_VERSION_REF}/koel-${KOEL_VERSION_REF}.tar.gz | tar -xz -C /tmp \
+RUN curl -L https://github.com/zyrouge/koel/releases/download/${KOEL_VERSION_REF}/koel-${KOEL_VERSION_REF}.tar.gz | tar -xz -C /tmp \
   && cd /tmp/koel/ \
   && rm -rf .editorconfig \
     .eslintignore \
