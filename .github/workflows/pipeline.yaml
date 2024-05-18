@@ -37,6 +37,7 @@ jobs:
     # needs: [test]
     # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     permissions:
+      id-token: write
       contents: read
       packages: write
       attestations: write
